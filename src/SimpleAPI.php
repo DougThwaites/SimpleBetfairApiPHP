@@ -33,10 +33,22 @@ class SimpleAPI
 {
 
     /**
-     * Define the login & the request API endpoints
+     * Define endpoints
      */
-    const LOGIN_ENDPOINT   = "https://identitysso-api.betfair.com/api/certlogin";
-    const REQUEST_ENDPOINT = "https://api.betfair.com/exchange/betting/json-rpc/v1";
+    private $endpoints = [
+        'login' => [
+            'methodPrefix' => '',
+            'endpoint' => 'https://identitysso-api.betfair.com/api/certlogin'
+        ],
+        'betting' => [
+            'methodPrefix' => 'SportsAPING/v1.0/',
+            'endpoint' => 'https://api.betfair.com/exchange/betting/json-rpc/v1'
+        ],
+        'accounts' => [
+            'methodPrefix' => 'AccountAPING/v1.0/',
+            'endpoint' => 'https://api.betfair.com/exchange/account/json-rpc/v1'
+        ]
+    ];
 
 
     /**
@@ -84,6 +96,11 @@ class SimpleAPI
             throw new SimpleAPIException('The API certificate file does not exist or is not readable');
         }
 
+        if (!isset($configuration['endpoint'])) {
+            throw new SimpleAPIException('The endpoint type is missing from the configuration options');
+        }
+
+        $this->endpoint = $this->endpoints[$configuration['endpoint']];
         $this->configuration = $configuration;
     }
 
@@ -160,7 +177,7 @@ class SimpleAPI
         // Initialize the CURL request
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, self::REQUEST_ENDPOINT);
+        curl_setopt($ch, CURLOPT_URL, $this->endpoint['endpoint']);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -171,7 +188,7 @@ class SimpleAPI
         ));
 
         // Add the POST data
-        $postData = '[{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/' . $operation . '", "params" :' . $params . ', "id": 1}]';
+        $postData = '[{"jsonrpc": "2.0", "method": "' . $this->endpoint['methodPrefix'] . $operation . '", "params" :' . $params . ', "id": 1}]';
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
 
         // Get the response

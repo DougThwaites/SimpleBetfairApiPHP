@@ -1,5 +1,5 @@
 {
-    "name"       : "dcro/simple-betfair-php-api",
+    "name"       : "DougThwaites/SimpleBetfairApiPHP",
     "type"       : "library",
     "description": "A simple PHP implementation for Betfair's API (API-NG)",
     "keywords"   : ["Betfair", "API", "API-NG", "JSON-RPC"],
