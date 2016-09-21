@@ -188,7 +188,8 @@ class SimpleAPI
         ));
 
         // Add the POST data
-        $postData = '[{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/' . $operation . '", "params" :' . $params . ', "id": 1}]';
+        $postData = '[{"jsonrpc": "2.0", "method": "' . $this->endpoint['methodPrefix'] . $operation . '", "params" :' . $params . ', "id": 1}]';
+
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
 
         // Get the response

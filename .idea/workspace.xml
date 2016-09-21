@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="889a6a3c-7136-4acb-9643-50539fb227a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="889a6a3c-7136-4acb-9643-50539fb227a1" name="Default" comment="" />
     <ignored path="SimpleBetfairApiPHP.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -173,12 +171,12 @@
       <option name="presentableId" value="Default" />
       <updated>1474437009599</updated>
       <workItem from="1474437011284" duration="1013000" />
-      <workItem from="1474438649216" duration="811000" />
+      <workItem from="1474438649216" duration="868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1824000" />
+    <option name="totallyTimeSpent" value="1881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="76" y="219" width="1440" height="873" extended-state="0" />
