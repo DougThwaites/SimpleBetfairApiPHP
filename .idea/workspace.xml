@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="889a6a3c-7136-4acb-9643-50539fb227a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimpleAPI.php" afterPath="$PROJECT_DIR$/src/SimpleAPI.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
     </list>
     <ignored path="SimpleBetfairApiPHP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +28,21 @@
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="31">
-              <caret line="1" column="52" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="52" />
+              <caret line="1" column="56" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="93">
-                <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <first_editor relative-caret-position="589">
+                <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
                 <folding>
-                  <marker date="1474437549000" expanded="true" signature="721:804" ph="{...}" />
-                  <marker date="1474437549000" expanded="true" signature="738:802" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
+                  <marker date="1474437746000" expanded="true" signature="721:808" ph="{...}" />
+                  <marker date="1474437746000" expanded="true" signature="738:806" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleAPI.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleAPI.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="2449">
               <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
               <folding />
             </state>
@@ -68,8 +68,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/SimpleAPI.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -147,12 +148,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474437009599</updated>
-      <workItem from="1474437011284" duration="589000" />
+      <workItem from="1474437011284" duration="735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589000" />
+    <option name="totallyTimeSpent" value="735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -193,10 +194,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/SimpleAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2449">
+          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
-          <caret line="1" column="52" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="52" />
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -204,22 +213,14 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="93">
-            <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <first_editor relative-caret-position="589">
+            <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
             <folding>
-              <marker date="1474437549000" expanded="true" signature="721:804" ph="{...}" />
-              <marker date="1474437549000" expanded="true" signature="738:802" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
+              <marker date="1474437746000" expanded="true" signature="721:808" ph="{...}" />
+              <marker date="1474437746000" expanded="true" signature="738:806" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleAPI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
