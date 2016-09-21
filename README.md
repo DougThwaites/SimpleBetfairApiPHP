@@ -17,7 +17,7 @@ You can either get the files from GIT or you can install the library via [Compos
 ```json
 {
     "require": {
-        "doug-thwaites/simple-betfair-api-php": 1.0.0
+        "doug-thwaites/betfair-esa-client": "^1.0"
     }
 }
 ```
