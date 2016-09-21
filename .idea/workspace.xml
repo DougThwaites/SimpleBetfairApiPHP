@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="889a6a3c-7136-4acb-9643-50539fb227a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
     </list>
     <ignored path="SimpleBetfairApiPHP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +37,11 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="589">
-                <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <first_editor relative-caret-position="124">
+                <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
                 <folding>
-                  <marker date="1474437746000" expanded="true" signature="721:808" ph="{...}" />
-                  <marker date="1474437746000" expanded="true" signature="738:806" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
+                  <marker date="1474437932000" expanded="true" signature="722:809" ph="{...}" />
+                  <marker date="1474437932000" expanded="true" signature="739:807" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -148,12 +147,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474437009599</updated>
-      <workItem from="1474437011284" duration="735000" />
+      <workItem from="1474437011284" duration="921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="735000" />
+    <option name="totallyTimeSpent" value="921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -213,11 +212,11 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="589">
-            <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <first_editor relative-caret-position="124">
+            <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             <folding>
-              <marker date="1474437746000" expanded="true" signature="721:808" ph="{...}" />
-              <marker date="1474437746000" expanded="true" signature="738:806" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
+              <marker date="1474437932000" expanded="true" signature="722:809" ph="{...}" />
+              <marker date="1474437932000" expanded="true" signature="739:807" ph="{&quot;dcro/simple-betfair-php-api&quot;: &quot;dev-master&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
