@@ -46,6 +46,26 @@ class SimpleAPI
      */
     private $sessionToken;
 
+    /**
+     * Betfair API endpoints
+     *
+     * @var string
+     */
+    private $endpoints = [
+        'login' => [
+            'methodPrefix' => '',
+            'endpoint' => 'https://identitysso-api.betfair.com/api/certlogin'
+        ],
+        'betting' => [
+            'methodPrefix' => 'SportsAPING/v1.0/',
+            'endpoint' => 'https://api.betfair.com/exchange/betting/json-rpc/v1'
+        ],
+        'accounts' => [
+            'methodPrefix' => 'AccountAPING/v1.0/',
+            'endpoint' => 'https://api.betfair.com/exchange/account/json-rpc/v1'
+        ],
+    ];
+
 
     /**
      * The class constructor
@@ -76,8 +96,12 @@ class SimpleAPI
             throw new SimpleAPIException('The API certificate file does not exist or is not readable');
         }
 
+        if (!isset($configuration['endpoint'])) {
+            $configuration['endpoint'] = 'betting';
+        }
+
+        $this->endpoint = $this->endpoints[$configuration['endpoint']];
         $this->configuration = $configuration;
-        $this->endpoint = 
     }
 
     /**
@@ -100,7 +124,7 @@ class SimpleAPI
         // Initialize the CURL request
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, $this->endpoints['loing']['endpoint']);
+        curl_setopt($ch, CURLOPT_URL, $this->endpoints['login']['endpoint']);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
