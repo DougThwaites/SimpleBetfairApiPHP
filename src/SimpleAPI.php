@@ -97,10 +97,10 @@ class SimpleAPI
         }
 
         if (!isset($configuration['endpoint'])) {
-            throw new SimpleAPIException('The endpoint type is missing from the configuration options');
+            $configuration['endpoint'] = 'betting';
         }
 
-        $this->endpoint = $this->endpoints[$configuration['endpoint']];
+        $this->endpoint = $this->endpoints[trim(strtolower($configuration['endpoint']))];
         $this->configuration = $configuration;
     }
 

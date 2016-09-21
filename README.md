@@ -1,3 +1,8 @@
+Thanks go to the original developer "dcro/simple-betfair-php-api"
+------------
+
+All I have done is add an optional endpoint type the the configuration to set either 'betting' or 'accounts'.
+
 Simple Betfair PHP API
 ======================
 
@@ -12,7 +17,7 @@ You can either get the files from GIT or you can install the library via [Compos
 ```json
 {
     "require": {
-        "dcro/simple-betfair-php-api": "dev-master"
+        "DougThwaites/SimpleBetfairApiPHP": "dev-master"
     }
 }
 ```
