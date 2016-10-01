@@ -63,7 +63,7 @@ class SimpleAPI
         'accounts' => [
             'methodPrefix' => 'AccountAPING/v1.0/',
             'endpoint' => 'https://api.betfair.com/exchange/account/json-rpc/v1'
-        ],
+        ]
     ];
 
 
@@ -72,6 +72,7 @@ class SimpleAPI
      * @param array $configuration The Betfair configuration options
      */
     public function __construct($configuration) {
+
         if (!function_exists('curl_version')) {
             throw new SimpleAPIException('The PHP curl extension is not installed. This extension is required to be able to use the API.');
         }
@@ -169,7 +170,7 @@ class SimpleAPI
     public function request($operation, $params)
     {
         // Get the session token
-        $sessionToken = $this->getSessionToken();
+        $sessionToken = (!empty($this->configuration['sessionToken']) ? $this->configuration['sessionToken'] : $this->getSessionToken());
 
         // Get the app key
         $appKey = $this->configuration['appKey'];
