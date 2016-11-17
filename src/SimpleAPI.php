@@ -205,9 +205,15 @@ class SimpleAPI
         }
 
         if (isset($response->error)) {
-            throw new SimpleAPIException($response->error->message, $response->error->code);
+
+            $errorMessage = $response->error->message.' | '.$response->error->data->APINGException->errorDetails;
+            throw new SimpleAPIException($errorMessage, $response->error->code);
+
         } elseif (isset($response[0]->error)) {
-            throw new SimpleAPIException($response[0]->error->message, $response[0]->error->code);
+
+            $errorMessage = $response[0]->error->message.' | '.$response[0]->error->data->APINGException->errorDetails;
+            throw new SimpleAPIException($errorMessage, $response[0]->error->code);
+
         }
 
         // Return the response
